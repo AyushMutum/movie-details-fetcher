@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie-Desc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <div class="search-container">
+      <input type="text" id="movieName" placeholder="Search a movie by its name...">
+      <button class="btn" onclick="fetchMovieDetails()">Search Movie</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="intro" id="intro">
+      <img class="logo" src="fast-movie-logo-cinema-logo-design-template_18099-726.avif" height="200px" alt="">
+      <h1 class="hightlight">Want the complete details of a movie?</h1>
+      <p>Search for the movie name and get complete details including directors, actors, awards, vote, box office and more...</p>
+    </div>
+  </section>
+
+  <div  id="loader"></div>
+
+  <section>
+
+    <div id="movieContainer" class="movie-container">
+      
+      <h1 id="error"></h1>
+
+      <div id='content' class="content">
+        <h1 id="title"></h1>
+        <p class="desc" id="desc"></p>
+        <h3 id="actors"></h3>
+        <h3 id="awards"></h3>
+        <h3 id="boxOffice"></h3>
+        <h3 id="director"></span></h3>
+        <h3 id="country"></h3>
+        <h3 id="genre"></h3>
+        <h3 id="language"></h3>
+
+      </div>
+      <img class="movie-img" id="img" src="" alt="">
+    </div>
+ 
+  <div class="error-container" id="errorContainer">
+    <h1 class="error-h1">Oops! <span>🥴</span> Movie not found!</h1>
+  </div>
+
+</section>
+
+
+</body>
+<script src="app.js"></script>
+</html>
